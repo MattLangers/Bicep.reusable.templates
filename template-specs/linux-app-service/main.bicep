@@ -1,5 +1,5 @@
 @description('The name of the App Service app. This name must be globally unique.')
-@minLength(2)
+@minLength(2) 
 param appServiceAppName string = 'web-${uniqueString(resourceGroup().id)}'
 
 @description('The location for all resources.')
